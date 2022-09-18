@@ -1,11 +1,24 @@
  
+ @font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
 body {
   margin: auto;
   padding: 50px;
-  width: 640px;
+  width: 840px;
   background : url("images/image_de_fond.jpg") fixed  no-repeat  center;
-
+  position: relative;
 }
+
+* {
+  
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 
 .presentation {
   font-size: 1.2rem;
@@ -40,7 +53,8 @@ body {
   display: inline;
 }
 
-li a {
+
+.navindex {
   background-color: pink;
   text-decoration: none;
   margin-left: 30px;
@@ -50,8 +64,7 @@ li a {
   font-size: 1.5rem;
 }
 
-a:hover{
-  text-decoration:underline;
+.navindex:hover  {
   color:green;
   font-size: 2rem;
 }
@@ -59,3 +72,65 @@ a:hover{
 ul {
   list-style-type: none;
 }
+
+
+.navbar {
+  position: absolute;
+  width: 135px;
+  height: 100%;
+  background-color: #424558;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  top: 18px;
+  left: 0px;
+}
+
+.navbar ul {
+  margin:0px;
+  padding:0px;
+}
+
+.navbar ul li {
+  float: left;
+  position: relative;
+}
+
+.navbar ul li a {
+  padding: 20px 30px;
+  color: #fff;
+}
+
+.navbar li {
+  list-style-type:none;
+}
+
+.navbar a {
+  display: inline-block;
+  text-decoration: none ;
+}
+
+.menu:hover {
+  color: aquamarine;
+}
+
+h1 {
+  font-size: 48px;
+  display: block;
+  font-weight: 700;
+  text-align: center;
+}
+
+.text {
+  padding: 0 0 0 100px;
+  font-size: 1rem;
+}
+
+.galerie_photo {
+  padding: 0 0 0 100px;
+}
+
+strong {
+  font-weight: 900;
+}
+
